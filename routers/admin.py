@@ -38,5 +38,5 @@ async def read_all(user: user_dependency, db: db_dependency):
 
 
 def check_admin_user_auth(user):
-    if user is None or user.get('user_role').lower() != 'aDmIn':
+    if user is None or user.get('user_role').lower() != 'admin':
         raise HTTPException(status_code=401, detail='Authentication Failed')

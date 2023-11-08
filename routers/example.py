@@ -3,7 +3,7 @@ from pydantic import BaseModel, Field
 from starlette import status
 
 import models
-from models import Todos, GenericObject
+from models.models import Todos, GenericObject
 
 
 router = APIRouter()
